@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>etch-a-sketch</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+
+  <header>
+    <h1 class="title">Etch-a-sketch</h1>
+  </header>
+
+  <div class="body-content unselectable">
+    <div class="left-pane">
+      <input type="color" id="color-picker" value="#333333"/>
+
+      
+      
+      <input type="radio" name="color-mode" id="user-color">
+      <label for="user-color">Color</label>
+      
+      <input type="radio" name="color-mode" id="random">
+      <label for="random">Random</label>
+      
+      <input type="radio" name="color-mode" id="rainbow">
+      <label for="rainbow">Rainbow Color</label>
+      
+      <input type="radio" name="color-mode" id="eraser">
+      <label for="eraser">Eraser</label>
+      
+      <button class="clear-button">Clear</button>
+      
+      <div class="slider">
+        <input class="inner-slider" type="range" min="1" max="64" value="16" oninput="rangeValue.innerText = `${this.value} x  ${this.value}`">
+        <p id="rangeValue" style="margin-bottom: 0;">16 x 16</p></div> 
+    </div>
+
+    <div class="right-pane"> 
+      <div class="canvas">
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer>
+    <p>Copyright © Shree Ram 💚</p>
+    <div class="socials">
+      <a href="https://github.com/mshreeram"><img src="/static/github.png" alt="" width="30px"></a>
+      <a href="https://www.linkedin.com/in/shree-ram-meka-9082391b6/"><img src="/static/linkedin.png" alt="" width="30px"></a>
+    </div>
+</footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
